@@ -202,11 +202,8 @@ header ul li{
     }
     header ul li:not(:first-child){
         visibility: hidden;
-        transition: 2s;
-        -webkit-transition: 2s;
-        -moz-transition: 2s;
-        -ms-transition: 2s;
-        -o-transition: 2s;
+        transition-property: color, box-shadow,transform;
+        transition-duration: 2s;
 }
 
     header ul:hover li  {
