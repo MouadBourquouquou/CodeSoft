@@ -534,8 +534,8 @@ header ul li a:hover{
     font-size: larger;
     background-clip: text;
     color: transparent;
-    animation: coloring 2s ease-in-out 0s infinite alternate;
-    -webkit-animation: coloring 2s ease-in-out 0s infinite alternate;
+    animation: coloring 2.3s ease-in-out 0s infinite alternate;
+    -webkit-animation: coloring 2.3s ease-in-out 0s infinite alternate;
 }
 
 .cards .card .box .back h2 {
