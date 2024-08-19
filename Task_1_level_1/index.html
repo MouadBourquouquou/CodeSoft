@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+    <a href="#top"><img src="images/fleche_top.png" alt="aroow" class="top"></a>
     <header id="#head">
         <div class="container">
-            <div class="logo_name">
+            <div id="top" class="logo_name">
                 <div class="logo"><img src="images/main_logo.png" alt="main logo"></div>
                 <h2 class="name">Mouad Audio</h2>
             </div>
@@ -30,7 +30,6 @@
                 <img src="images/menu_icone.png" alt="" class="fa-bars">
                 <li><a href="#products">Products</a></li>
                 <li><a href="#buy">Buy Now</a></li>
-                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -217,5 +216,92 @@
             </div>
         </div>
     </section>
+    <section id="buy">
+        <div class="container">
+            <h1 class="head_section">Buy Now</h1>
+            <form>
+                <div class="personal">
+                    <div class="name">
+                        <label>Your name</label>
+                        <input type="text" placeholder="My name" required>
+                    </div>
+                    <div class="mail">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="phone">
+                        <label>Your phone number</label>
+                        <input type="text" placeholder="+212 600000000" required>
+                    </div>
+                    <div class="address">
+                        <label>Your address</label>
+                        <input type="text" placeholder="10 Nighborhood City Country" required>
+                    </div>
+                </div>
+                <hr>
+                <div class="prod_quan">
+                    <div class="product">
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>Red Fire</label>
+                        </div>
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>Dark Night</label>
+                        </div>
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>RMV Black</label>
+                        </div>
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>Forest VVC</label>
+                        </div>
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>Silver Fide</label>
+                        </div>
+                        <div class="lab_inpu">
+                            <input type="checkbox">
+                            <label>Silver Maback</label>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <input type="number" placeholder="1">
+                        <input type="number" placeholder="1">
+                        <input type="number" placeholder="1">
+                        <input type="number" placeholder="1">
+                        <input type="number" placeholder="1">
+                        <input type="number" placeholder="1">
+                    </div>
+                </div>
+                <hr>
+                <div class="buttons">
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <header>
+                <h2 class="head_section">Contact</h2>
+            </header>
+            <div class="box_contact">
+                    <p>Feel free to drop us a line at:</p>
+                    <p><a href="mailto:mouadbourquouquou@gmail.com" target="_blank">mouadbourquouquou@gmail.com</a></p>
+                    <div class="cont">
+                        <a href="https://wa.me/212710461852" target="_blank"><img src="images/whatssap.png" alt="no"></a>
+                        <a href="https://www.linkedin.com/in/mouad-bourquouquou-94714b266/" target="_blank"><img src="images/linkedin.png" alt="no"></a>
+                        <a href="https://github.com/MouadBourquouquou" target="_blank"><img src="images/github.png" alt="no"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 <span>Mouad Audio</span> All Right Reserved</p>
+    </footer>
 </body>
 </html>

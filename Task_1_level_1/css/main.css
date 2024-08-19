@@ -21,15 +21,26 @@ body{
     color: rgb(106, 228, 228);
     opacity: 0.8;
     text-shadow: 0px 4px 2px #1600ff;
+    border: 2px solid blue;
     font-weight: 700;
     font-size: 40px;
     margin-top: 60px;
+    padding: 10px;
     margin-bottom: 60px;
 }
 
 ul{
     list-style: none;
     padding: 0px;
+}
+
+.top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
 /* styling container */
@@ -228,12 +239,10 @@ header ul li{
     header ul li:nth-child(3){
         top: 133px;
     }
-    header ul li:nth-child(4){
+    header ul li:last-child{
         top: 183px;
     }
-    header ul li:last-child{
-        top: 234px;
-    }
+    
     .fa-bars{
         width: 35px;
         height: 35px;
@@ -293,6 +302,7 @@ header ul li a:hover{
         background-size: 420px;
     }
 }
+/* animation background introduction */
 @keyframes background_si{
     0%{
         background-position: right top, right bottom, center top,center bottom,left top,left bottom; 
@@ -313,7 +323,7 @@ header ul li a:hover{
         background-position: right bottom, center top, left bottom,center top,right bottom,left top;
     }
 }
-
+/* introduction text */
 .introdution .text{
         opacity: initial;
         background-color: rgba(225, 225, 225, 0.4);
@@ -327,15 +337,11 @@ header ul li a:hover{
         -o-border-radius: 8px;
 }
 .introdution .text h1{
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
         color: #00c8ff;
         text-shadow: 1px 1px 5px rgb(55, 0, 255);
 }
 .introdution .text p{
     color: white;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
     text-shadow: 1px 1px 10px black;
     font-size: 22px;
     font-weight: 700;
@@ -550,5 +556,221 @@ header ul li a:hover{
     -ms-transform: rotateY(-180deg);
     -o-transform: rotateY(-180deg);
 }
-
 /* end secton product */
+/* start buy now section */
+#buy .container form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* personal form styling */
+form .personal{
+    width: 100%;
+}
+
+form hr{
+    background-color: #000aff;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+form .personal div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+form .personal div input{
+    width: 100%;
+}
+form .personal div input, form .personal div label{
+    font-size: 24px;
+}
+
+/* product form styling */
+form .prod_quan{
+    display: flex;
+    gap: 50px;
+}
+
+form .prod_quan .product, 
+form .prod_quan .quantity{
+    display: flex;
+    gap:5px;
+    flex-direction: column;
+}
+form .prod_quan .product{
+    gap: 22px;
+}
+form .prod_quan .product input{
+    width: 30px;
+    height: 30px;
+}
+form .prod_quan .product input:checked + label{
+    color: blue;
+}
+
+form .prod_quan .product .lab_inpu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width:423.9px){
+    form .prod_quan .quantity{
+        font-size: 22px;
+    }    
+    form .prod_quan input{
+        width: 45px;
+        height: 45px;
+    }   
+    form .prod_quan .product .lab_inpu label{
+        font-size: 18px;
+    }   
+}
+@media (min-width:424px){
+    
+    form .prod_quan .product .lab_inpu label{
+        font-size: 30px;
+    }   
+
+    form .prod_quan .quantity{
+        font-size: 30px;
+    }  
+    form .prod_quan .quantity input{
+        width: 50px;
+        height: 50px;
+    }
+}
+form .prod_quan .quantity input:focus{
+    background-color: rgb(0, 255, 234);
+    outline: none;
+    border: 2px solid blue;
+}
+/* button styling */
+form .buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+form .buttons input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 30px;
+    box-shadow: inset 1px 1px 8px 0px #004aff;
+    border: none;
+    background-color: aqua;
+    color: blue;
+    cursor: pointer;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* end buy now section */
+/* start contact section  */
+
+#contact{
+    padding-bottom: 110px;
+    margin-top: 74px;
+    margin-bottom: 210px;
+}
+.box_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_contact p:first-of-type{
+    color: blue;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.box_contact p:nth-child(2) a{
+    color: #10cab7;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 4;
+}
+
+@media (max-width:419.9px){
+    .box_contact p:first-of-type{
+        font-size: 22px;
+    }
+    .box_contact p:nth-child(2) a{
+        font-size:18px;
+    }
+}
+@media (min-width:420px) and (max-width:549.9px){
+    .box_contact p:first-of-type{
+        font-size: 22px;
+    }
+    .box_contact p:nth-child(2) a{
+        font-size:18px;
+    }
+}
+@media (min-width:550px){
+    .box_contact p:first-of-type{
+        font-size: 30px;
+    }
+    .box_contact p:nth-child(2) a{
+        font-size:26px;
+    }
+}
+
+.box_contact .cont{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+
+.box_contact .cont a{
+    width: 25px;
+    height: 25px;
+}
+.box_contact .cont span{
+    position: relative;
+    top: 10px;
+}
+
+/* end contact section */
+/* start footer styling*/
+footer{
+    background-color: rgb(9, 9, 133);
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width:449.9px){
+    footer{
+        font-size: 17px;
+    }
+}
+@media (min-width:450px) and (max-width:619.9px){
+    footer{
+        font-size: 22px;
+    }
+}
+@media (min-width:620px){
+    footer{
+        font-size: 30px;
+    }
+}
+
+footer p span{
+    font-weight: 600;
+    color: aqua;
+}
+/* end footer styling*/
